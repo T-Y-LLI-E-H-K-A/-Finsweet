@@ -31,21 +31,21 @@
     margin-right: auto;
 }
 
-.header__nav--list {
+.nav-list {
     line-height: 28px;
     display: flex;
 }
 
-.header__nav--item {
+.nav__list-item {
     margin-left: 40px;
     transition: .3s;
 }
 
-.header__nav--item:first-child {
+.nav__list-item:first-child {
     margin: 0;
 }
 
-.header__nav--item:hover {
+.nav__list-item:hover {
     color: #FF6433;
     transform: scale(1.1);
 }
