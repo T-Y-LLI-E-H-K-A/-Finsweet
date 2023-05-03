@@ -651,3 +651,137 @@
 }
 
 /*-------------------------------------------------------------------------------*/
+
+.blog {
+    padding: 131px 0 136px;
+}
+
+.blog__heading {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 76px;
+    letter-spacing: -0.03em;
+    margin-bottom: 47px;
+}
+
+.blog__filter-box {
+    display: flex;
+    margin-bottom: 46px;
+
+}
+
+.filter-box__item {
+    margin-right: 30px;
+}
+
+.filter-box__item:last-child {
+    margin: 0;
+}
+
+.filter-box__btn {
+    background: none;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+    transition: .3s;
+}
+
+.filter-box__btn:hover {
+    color: #FF6433;
+}
+
+.filter-box__btn--active {
+    color: #FF6433;
+}
+
+.blog__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.blog__list-item {
+    max-width: 405px;
+    max-height: 606px;
+    transition: .3s;
+}
+
+.blog__list-item:hover {
+    transform: scale(1.05);
+}
+
+.blog__list-link {}
+
+.blog__image-box {
+    margin-bottom: 24px;
+}
+
+.blog__image-box img {
+    width: 100%;
+    height: 100%;
+}
+
+.blog__link-content {}
+
+.blog__content-date {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #939191;
+    margin-bottom: 16px;
+}
+
+.blog__content-heding {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+}
+
+.blog__content-txt {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #232536;
+}
+
+/*-------------------------------------------------------------------------------*/
+
+.testimonials {
+    background-color: #F2F2F2;
+    padding: 128px 0 128px;
+}
+
+.testimonials__inner {}
+
+.testimonial__heding {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 76px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    margin: 0 185px 76px;
+}
+
+.testimonial__body {
+
+}
+
+.testimonial__review-list {
+    
+}
+
+.review-list__item {}
+
+.testimonial__line {}
+
+.line__item {}
+
+.testimonial__sliders-box {}
+
+.sliders-box__btn-left {}
+
+.sliders-box__btn-right {}
