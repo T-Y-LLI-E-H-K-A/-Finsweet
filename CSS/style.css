@@ -906,6 +906,109 @@
 
 /*-------------------------------------------------------------------------------*/
 
+.faq {
+    background-color: #E2E6E9;
+    padding: 128px 0;
+}
+
+.faq__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 177px;
+}
+
+.faq__heding {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 76px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    margin: 0 auto 86px;
+}
+
+.faq__list {
+    width: 100%;
+}
+
+.faq__list-item {
+    background-color: #FFFFFF;
+    padding: 32px 40px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.faq__list-item:last-child {
+    margin: 0;
+}
+
+
+.faq__list-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq__list-link--active .faq-link__indicator::after {
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.faq-link__heding-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-link__heding {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+}
+
+.faq-link__indicator {
+    min-width: 51px;
+    height: 48px;
+    background-color: #FF6433;
+    position: relative;
+}
+
+.faq-link__indicator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 17px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+}
+
+.faq-link__indicator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%) rotateZ(90deg);
+    width: 17px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #FFFFFF;
+    transition: .3s;
+}
+
+.faq-link__content-txt {
+    margin-top: 12px;
+    max-width: 700px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 175%;
+    color: #939191;
+    margin-right: 116px;
+}
+
+/*-------------------------------------------------------------------------------*/
 .footer {
     color: #FFFFFF;
 }
