@@ -146,9 +146,9 @@
 .header__title {
     font-weight: 800;
     font-size: 64px;
-    line-height: 84px;
+    line-height: 131%;
     letter-spacing: -0.03em;
-    margin: 0 20px 32px 0;
+    margin: 0 32px 32px 0;
 
 }
 
@@ -179,7 +179,14 @@
     align-items: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
+}
 
+.header__btns--video::before {
+    content: '';
+    background-image: url(../icon/Play-icon.svg);
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
 }
 
 .header__btns--video>img {
@@ -207,7 +214,8 @@
 .header__txt--item1 {
     color: #939191;
     font-weight: 500;
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 150%;
 }
 
 .header__txt--item2 {
@@ -1281,8 +1289,42 @@
 
 /*----------------------------------------------------------------------------------------*/
 
-@media (max-width: 900px) {
-    
+@media (max-width: 1110px) {
+
+    .header__img {
+        overflow: hidden;
+    }
+
+    .header__content--1 {
+        max-width: 370px;
+    }
+
+    .header__title {
+        font-size: 45px;
+    }
+
+    .header__txt--item1 {
+        font-size: 12px;
+    }
+
+    .header__txt--item2 {
+        font-size: 14px;
+    }
+
+    .header__img {
+        max-width: 526px;
+        max-height: 540px;
+    }
+
+    .header__rating {
+        top: 365px;
+        left: 200px;
+    }
+
+}
+
+@media (max-width: 920px) {
+
     .header__top-mobil {
         display: flex;
         height: 89.5px;
@@ -1290,11 +1332,11 @@
         align-items: center;
         padding: 0 15px;
     }
-    
+
     .top-mobil__logo {
         padding-top: 2px;
     }
-    
+
     .header__top {
         transform: translateY(-100%);
         transition: all .3s;
@@ -1303,8 +1345,6 @@
     .header__top--open {
         transform: translateY(0)
     }
-
-
 
     .burger {
         display: flex;
@@ -1326,7 +1366,6 @@
         box-shadow: 0 0 10px 2px #342c4163;
         transition: all .3s;
     }
-
 
     .burger span {
         display: block;
@@ -1407,10 +1446,140 @@
     .header__assistance {
         margin: 20px 0 15px;
     }
+
+    .header__img {
+        max-width: 432px;
+        max-height: 452px;
+    }
+
+    .header__rating {
+        top: 338px;
+        left: 109px;
+    }
+}
+
+@media (max-width: 820px) {
+
+    .header__btns {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .header__btns--link {
+        margin-bottom: 20px;
+    }
+
+    .header__img {
+        max-width: 432px;
+        max-height: 543px;
+    }
+}
+
+@media (max-width: 770px) {
+
+    .header__content--1 {
+        max-width: 265px;
+    }
+
+    .header__title {
+        font-size: 30px;
+    }
+
+    .header__txt--item1 {
+        font-size: 10px;
+    }
+
+    .header__txt--item2 {
+        font-size: 12px;
+    }
+
+    .header__img {
+        max-width: 334px;
+        max-height: 355px;
+    }
+
+    .header__rating {
+        transform: scale(0.7);
+        top: 300px;
+        left: 63px;
+    }
+
+}
+
+@media (max-width: 630px) {
+
+    .header__content--2 {
+        display: none;
+    }
+
+    .header__content--1 {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__title {
+        font-size: 45px;
+        margin: 0 0 32px 0;
+        text-align: center;
+    }
+
+    .header__btns {
+        flex-direction: row;
+    }
+
+    .header__btns--link {
+        margin-bottom: 0;
+    }
+
+    .header__txt--item1 {
+        font-size: 16px;
+    }
+
+    .header__txt--item2 {
+        font-size: 18px;
+    }
+
+
 }
 
 @media (max-width: 450px) {
     .header__top {
         left: 0;
+        min-width: 0;
     }
+
+    .header__title {
+        font-size: 30px;
+
+    }
+}
+
+@media (max-width: 400px) {
+
+    .header__txt--item1 {
+        font-size: 11px;
+    }
+
+    .header__txt--item2 {
+        font-size: 13px;
+    }
+
+    .header__btns {
+        flex-direction: column;
+        margin-bottom: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header__btns--link {
+        margin: 0 0 20px;
+    }
+
+    .header__btns--video {
+        margin-left: -4px;
+    }
+
 }
